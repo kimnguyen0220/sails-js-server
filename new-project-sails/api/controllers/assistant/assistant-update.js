@@ -56,11 +56,8 @@ module.exports = {
     }
 
     catch(error) {
-      console.log(error);
-      exits.error();
+      return exits.error();
     }
-
-    return exits.success();
   }
 
 

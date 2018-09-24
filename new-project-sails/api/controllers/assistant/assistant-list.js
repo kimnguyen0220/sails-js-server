@@ -38,12 +38,8 @@ module.exports = {
       return exits.success(item);
     }
     catch(error) {
-      console.log(error);
-      exits.error();
+      return exits.error();
     }
-
-    return exits.success();
-
   }
 
 

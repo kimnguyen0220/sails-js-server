@@ -53,12 +53,8 @@ module.exports = {
       return exits.success(assistant);
     }
     catch (error) {
-      console.log(error);
-      exits.error(error);
+      return exits.error();
     }
-
-    return exits.success();
-
   }
 
 

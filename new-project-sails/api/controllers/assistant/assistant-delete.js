@@ -28,11 +28,8 @@ module.exports = {
       return exits.success(deleteAssistant);
     }
     catch(error) {
-      console.log(error);
-      exits.error();
+      return exits.error();
     }
-    return exits.success();
-
   }
 
 
