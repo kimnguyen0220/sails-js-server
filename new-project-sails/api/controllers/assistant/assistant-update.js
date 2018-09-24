@@ -52,7 +52,7 @@ module.exports = {
         .fetch();
 
       console.log(updateAssistant);
-      return exits.success();
+      return exits.success(updateAssistant);
     }
 
     catch(error) {

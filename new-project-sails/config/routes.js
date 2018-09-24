@@ -30,21 +30,9 @@ module.exports.routes = {
     view: 'pages/homepage'
   },
 
-  //'GET /assistant' : { view: 'a/list'}
-
-  'GET /test1' : 'TestController.async',
-  'GET /test/list' : 'TestController.getName',
-  'GET /test/list/:id' : 'TestController.getUserId',
-
-  'GET /assistant/activate/:id' : 'assistant/activate',
-  'GET /demo1/demo/:id' : 'demo1/demo',
-  'POST /demo1': 'demo1/create',
-
-
-  //'GET /assistants' : 'assistant/assistant-list',
-  'GET /assistants/item/:id' : 'assistant/assistant-list',
+  'GET /assistants/:id' : 'assistant/assistant-list',
   'POST /assistants' : 'assistant/assistant-create',
-  'PUT /assistants/edit' : 'assistant/assistant-update',
+  'PUT /assistants/:id' : 'assistant/assistant-update',
   'DELETE /assistants/:id' : 'assistant/assistant-delete'
 
 

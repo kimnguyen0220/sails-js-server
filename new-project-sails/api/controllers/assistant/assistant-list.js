@@ -30,10 +30,9 @@ module.exports = {
   fn: async function (inputs, exits) {
 
     try {
-      const item = await Assistant.find({id: inputs.id});
-      console.log(item);
+      const item = await Assistants.findOne({id: inputs.id});
       if(!item) {
-        return exits.notFound.responseType;
+        return exits.notFound;
       }
 
       return exits.success(item);
